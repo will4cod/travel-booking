@@ -1,0 +1,54 @@
+:root {
+    --color: #EE6263;
+}
+
+*{
+    font-family: 'Exo 2', 'sans-serif';
+    font-style: italic;
+    text-transform: uppercase;
+    transition: all .2s linear;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    position: fixed;
+    flex-flow: row-reverse;
+    z-index: 1;
+}
+
+.left{
+    display: flex;
+    position: relative;
+}
+
+#search{
+    padding: 0 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--color);
+    position: absolute;
+    right: 13.4rem;
+    color: #fff;
+}
+
+#search:hover, #search:focus {
+    width: 25rem;
+}
+
+#search:active::placeholder {
+    color: #333;
+}
