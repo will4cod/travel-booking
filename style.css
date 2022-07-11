@@ -52,3 +52,37 @@ header{
 #search:active::placeholder {
     color: #333;
 }
+
+/* .fas {
+    margin: 1rem;
+    z-index: 1;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+} */
+
+.logo {
+    margin: 0 3rem;
+}
+
+.logo h1{
+    font-size: 3rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #333;
+    margin: 0 2rem;
+}
+
+nav ul li a:hover{
+    color: var(--color);
+}
