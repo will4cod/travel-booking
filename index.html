@@ -7,12 +7,12 @@
     <title>Responsive Travel Website Landing Page</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../all.css">
+    <!-- <link rel="stylesheet" href="../all.css">
     <link rel="stylesheet" href="fonts.css">
 
-    <script src="../jquery.js"></script>
+    <script src="../jquery.js"></script> -->
 </head>
-<body>
+<body onload="load()">
     <header>
         <div class="left">
             <input type="search" placeholder="search" id="search">
@@ -25,7 +25,10 @@
 
         </div>
 
-        
+        <!-- adicionar icone de menu barras -->
+        <div class="barras">
+            <img src="./img/menu.png" alt="menu" srcset="" onclick="clickMenu()">
+        </div>
 
         <nav>
             <ul>
@@ -37,5 +40,34 @@
             </ul>
         </nav>
     </header>
+
+
+    <script>
+
+        function load(){            
+        }
+
+        function updateLogo() {
+            var logo = document.querySelector('.barras img');
+            logoMenu = logo.src.split('menu.png')
+            logoFechar = logo.src.split('fechar.png')
+
+
+            console.log(logo.src)
+            if(logoMenu[1] == ''){
+                logo.src =  logoMenu[0] + 'fechar.png'
+            }else{
+                logo.src =  logoFechar[0] + 'menu.png'   
+            }
+        }
+
+        function clickMenu(){
+            document.querySelector('nav').classList.toggle('active');
+            updateLogo()
+        }
+        //document.querySelector('barras')
+    
+    </script>
+
 </body>
 </html>

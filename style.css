@@ -86,3 +86,51 @@ nav ul li a{
 nav ul li a:hover{
     color: var(--color);
 }
+
+.barras{
+    font-size: 3.5rem;
+    color: var(--color);
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px) {
+    .barras{
+        display: block;
+    }
+
+    nav{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100vh;
+        background-color: #fff;
+    }
+
+    nav ul{
+        height: 100%;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    nav ul li{
+        margin: 2rem 0;
+    }
+
+    nav ul li a{
+        font-size: 3rem;
+
+    }
+
+    .active{
+        left: 0;
+    }
+}
