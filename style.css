@@ -43,6 +43,7 @@ header{
     position: absolute;
     right: 13.4rem;
     color: #fff;
+    top: calc(100% - 54px);
 }
 
 #search:hover, #search:focus {
@@ -53,13 +54,15 @@ header{
     color: #333;
 }
 
-/* .fas {
-    margin: 1rem;
+.fas {
+    width: 30px;
+    height: 30px;
     z-index: 1;
-    color: #fff;
+    top: calc(100% - 50px);
+    right: 14rem;
+    position: absolute;
     cursor: pointer;
-    font-size: 2rem;
-} */
+}
 
 .logo {
     margin: 0 3rem;
@@ -177,6 +180,10 @@ nav ul li a:hover{
     html{
         font-size: 45%;
     }
+
+    #search{
+        top: calc(100% - 48px);
+    }
 }
 
 @media (max-width:668px) {
@@ -210,10 +217,11 @@ nav ul li a:hover{
 
     .container{
         text-align: center;
+        padding: 0;
     }
 
     .content{
-        width: 100%;
+        width: 80%;
         margin: 0;
     }
 
@@ -222,7 +230,7 @@ nav ul li a:hover{
     }
 
     .icons{
-        width: 100%;
+        width: 80%;
         padding-right: 3rem;
     }
 
@@ -239,7 +247,7 @@ nav ul li a:hover{
 
     #search{
         right: .5rem;
-        top: 5.5rem;
+        top: 9rem;
     }
 
     #search:hover, #search:focus {
