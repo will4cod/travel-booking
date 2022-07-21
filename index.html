@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="fonts.css">
 
     <script src="../jquery.js"></script> -->
+
+    <!-- <a href="https://www.flaticon.com/br/icones-gratis/facebook" title="facebook ícones">Facebook ícones criados por Pixel perfect - Flaticon</a> -->
 </head>
 <body onload="load()">
     <header>
@@ -41,8 +43,29 @@
         </nav>
     </header>
 
+    <section class="container">
+        
+        <div class="content">
+            <h1>book your journey now!</h1>
+            <h3>explore de world with us</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur at aut nemo aliquam sint quaerat, veniam obcaecati molestiae ducimus sequi amet sed cumque totam ut quibusdam, magnam in nihil saepe.</p>
+            <a href="#"><button class="btn2">Book now</button></a>
+            <a href="#"><button class="btn2">explore more</button></a>
+            
+            <div class="icons">
+                <a href="#" class="fab fa-facebook"><img src="./img/facebook.png" alt="Facebook" srcset=""></a>
+                <a href="#" class="fab fa-twitter"><img src="./img/twitter.png" alt="twitter" srcset=""></a>
+                <a href="#" class="fab fa-instagram"><img src="./img/instagram.png" alt="instagram" srcset=""></a>
+                <a href="#" class="fab fa-pinterest"><img src="./img/pinterest.png" alt="pinterest" srcset=""></a>
+            </div>
+        </div>
 
-    <script>
+        <div class="image">
+            <img src="./img/principal.jpg" alt="Foto de Mikhael Mayim: https://www.pexels.com/pt-br/foto/papel-de-parede-android-papel-de-parede-de-galaxia-papel-de-parede-de-iphone-papel-de-parede-da-tela-de-bloqueio-11020073/" srcset="">
+        </div>
+    </section>
+        
+        <script>
 
         function load(){            
         }
@@ -53,7 +76,7 @@
             logoFechar = logo.src.split('fechar.png')
 
 
-            console.log(logo.src)
+            // console.log(logo.src)
             if(logoMenu[1] == ''){
                 logo.src =  logoMenu[0] + 'fechar.png'
             }else{

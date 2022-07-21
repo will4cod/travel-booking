@@ -95,6 +95,84 @@ nav ul li a:hover{
     z-index: 2;
 }
 
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
+    position: relative;
+}
+
+.content{
+
+    width: 40vw;
+    margin-left: -5rem;
+    color: #333;
+}
+
+
+.content h1{
+    font-size: 4rem;
+}
+
+.content h3{
+    font-size: 2.5rem;
+    margin: 1.4rem 0;
+    color: var(--color);
+}
+
+.content p{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    border-bottom: .2rem solid #333;
+    border-top: .2rem solid #333;
+}
+
+.btn2{
+    outline: none;
+    border: none;
+    height: 4rem;
+    width: 14rem;
+    border-radius: 5rem;
+    background-color: var(--color);
+    color: #fff;
+    cursor: pointer;
+    margin: 2rem 0;
+}
+
+.btn2:first-child{
+    margin-right: 1.5rem;
+}
+
+.content a button:hover{
+    background: #333;
+}
+
+.icons{
+    position: absolute;
+    bottom: 4rem;
+}
+
+.icons a{
+    font-size: 2.4rem;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.image {
+    margin-top: 5rem;
+    margin-right: 5rem;
+}
+
+.image img{
+    width: 25vw;
+    /* max-width: 480px;
+    max-height: 800px; */
+    border-radius: 20px;
+}
+
 @media (max-width:991px) {
     html{
         font-size: 55%;
@@ -134,3 +212,4 @@ nav ul li a:hover{
         left: 0;
     }
 }
+
