@@ -255,3 +255,42 @@ nav ul li a:hover{
     }    
 
 }
+
+/* estilos da pagina booking */
+
+.container-booking{
+    width: 80%;
+    margin: auto;
+}
+
+.content-booking{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-booking h2{
+    margin-top: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.atividade{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.atividade img{
+    width: 200px;
+    margin: 30px;
+}
+
+.info h3{
+    font-size: 2.0em;
+    margin: 10px;
+}
+
+.info p{
+    font-size: 1.2em;
+}
