@@ -10,14 +10,14 @@
 
 </head>
 <body>
-    <header>
+    <header class="header-booking">
         <div class="left">
             <input type="search" placeholder="search" id="search">
             <!-- adicionar icone de busca -->
             <!-- <img src="./img/lupa.png" alt="Lupa busca" class="fas" srcset=""> -->
             <!-- <label for="search" class="fas fa-search"></label> -->
 
-            <div class="logo">
+            <div class="logo-booking">
                 <img src="./img/montanha.png" alt="Logo" srcset="">
             </div>
 
@@ -30,8 +30,8 @@
 
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">booking</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./booking.html">booking</a></li>
                 <li><a href="#">maps</a></li>
                 <li><a href="#">about</a></li>
                 <li><a href="#">login</a></li>
@@ -51,7 +51,7 @@
             </div>
 
             <div class="atividade">
-                <img src="./img/principal.jpg" alt="trilhas" srcset="">
+                <img src="./img/trilha.jpg" alt="trilhas" srcset="">
                 <div class="info">
                     <h3>Trilhas</h3>
                     <p>Trilhas para ilhas paradisiacas.</p>
@@ -59,13 +59,41 @@
             </div>
 
             <div class="atividade">
-                <img src="./img/principal.jpg" alt="balão" srcset="">
+                <img src="./img/balao.jpg" alt="balão" srcset="">
                 <div class="info">
                     <h3>Balão</h3>
-                    <p>Passeios de balão deslumbrando o nascer ou pôr do sol</p>
+                    <p>Passeios de balão deslumbrando o nascer ou pôr do sol.</p>
                 </div> 
             </div>
         </div>
     </section>
+
+    <script>
+
+        function load(){            
+        }
+
+        function updateLogo() {
+            var logo = document.querySelector('.barras img');
+            logoMenu = logo.src.split('menu.png')
+            logoFechar = logo.src.split('fechar.png')
+
+
+            // console.log(logo.src)
+            if(logoMenu[1] == ''){
+                logo.src =  logoMenu[0] + 'fechar.png'
+            }else{
+                logo.src =  logoFechar[0] + 'menu.png'   
+            }
+        }
+
+        function clickMenu(){
+            document.querySelector('nav').classList.toggle('active');
+            updateLogo()
+        }
+        //document.querySelector('barras')
+    
+    </script>
+
 </body>
 </html>
